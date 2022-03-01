@@ -1,0 +1,74 @@
+.about {
+  display: flex;
+  height: 78vh;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(114, 170, 185, 0),
+      rgba(114, 170, 185, 0),
+      rgba(114, 170, 185, 0),
+      rgba(138, 135, 35, 0.2),
+      rgb(66, 136, 155)
+    ),
+    url("./bg.jpg");
+  backdrop-filter: blur(2px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.aboutGreet {
+  width: 100%;
+}
+.aboutGreet h1 {
+  font-family: "Nunito";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 1.2px 1.2px 2px rgba(0, 0, 0, 0.438);
+}
+.aboutGreet p {
+  text-align: center;
+  font-family: "Nunito";
+  line-height: 15px;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.about svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+}
+.svg--lg {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .about svg {
+    height: 120px;
+  }
+  .svg--sm {
+    display: none;
+  }
+  .svg--lg {
+    display: block;
+  }
+  .svg--sm {
+    display: none;
+  }
+  .svg--lg {
+    display: block;
+  }
+  .aboutGreet {
+    padding: 0 0 0 6rem;
+  }
+  .aboutGreet h1 {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+  .aboutGreet p {
+    text-align: left;
+  }
+}
