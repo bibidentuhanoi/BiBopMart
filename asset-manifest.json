@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/BiBopMart/static/css/main.388515f5.css",
+    "main.js": "/BiBopMart/static/js/main.23af9363.js",
+    "static/js/787.7c1548d5.chunk.js": "/BiBopMart/static/js/787.7c1548d5.chunk.js",
+    "static/media/bg.jpg": "/BiBopMart/static/media/bg.c1e0b321c821d9bf6f83.jpg",
+    "static/media/cashew.png": "/BiBopMart/static/media/cashew.1dc58175908c4e16ea54.png",
+    "static/media/Rawcashew.png": "/BiBopMart/static/media/Rawcashew.85e671294b5b2b024cc4.png",
+    "static/media/milkChurn.png": "/BiBopMart/static/media/milkChurn.321c6f114ba45ce7c08d.png",
+    "static/media/birdnest.png": "/BiBopMart/static/media/birdnest.8dc7bd06b45a54f7718d.png",
+    "index.html": "/BiBopMart/index.html",
+    "main.388515f5.css.map": "/BiBopMart/static/css/main.388515f5.css.map",
+    "main.23af9363.js.map": "/BiBopMart/static/js/main.23af9363.js.map",
+    "787.7c1548d5.chunk.js.map": "/BiBopMart/static/js/787.7c1548d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.388515f5.css",
+    "static/js/main.23af9363.js"
+  ]
+}
