@@ -3,7 +3,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import About from "./Components/About/About";
 import Products from "./Components/Products/Products";
 import YourCart from "./Components/Cart/Cart";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Router, Route, Routes } from "react-router-dom";
 
 export default function App() {
   const [Cart, setCart] = useState([]);
@@ -67,7 +67,7 @@ export default function App() {
     CartSummary(Cart);
   }, [Cart]);
   return (
-    <Router>
+    <>
       <NavBar CartSum={CartSum} />
       <Routes>
         <Route
@@ -92,6 +92,6 @@ export default function App() {
           }
         />
       </Routes>
-    </Router>
+    </>
   );
 }

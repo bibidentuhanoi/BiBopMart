@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Cart.css";
 import CartEmpty from "./cartEmpty";
+import PaymentSubmit from "./PaymentSubmit";
 
 export default function YourCart({
   Cart,
@@ -9,8 +10,16 @@ export default function YourCart({
   onRemoveItem,
   RemoveFromCart,
 }) {
+  const [Pay, SetPay] = useState(false);
   return (
     <section className="Cart">
+      {Pay ? (
+        <div className="Payment">
+          <PaymentSubmit SetPay={SetPay} />
+        </div>
+      ) : (
+        ""
+      )}
       {Cart.length !== 0 ? (
         <>
           <h1>Giỏ Hàng</h1>
@@ -57,7 +66,7 @@ export default function YourCart({
                     <span onClick={() => RemoveFromCart(Item.ProductName)}>
                       Bỏ Khỏi Giỏ Hàng
                     </span>
-                    <button>Thanh Toán</button>
+                    <button onClick={() => SetPay(true)}>Thanh Toán</button>
                   </div>
                 </div>
               );
